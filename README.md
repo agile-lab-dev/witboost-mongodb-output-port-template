@@ -17,7 +17,18 @@ This repository is part of our [Starter Kit](https://github.com/agile-lab-dev/wi
 
 ## Overview
 
-Use this template to automatically create a MongoDB Output Port.
+Use this template to define an Output Port exposing a MongoDB-hosted database, with integrated access control for both the database and its collections.
+
+![Output Port Provisioning](docs/img/hld-Output-Port-Provisioning.png)
+
+The MongoDB Output Port Template guides you through the configuration of a secure and well-defined Output Port for exposing data from a MongoDB instance.
+
+- **Component Metadata**: Basic information such as name, description, domain, related Data Product, ownership, and tags.
+- **Terms & Conditions and SLA**: Define usage policies, data refresh interval, timeliness, and availability.
+- **Data Sharing Agreement**: Specify governance details including purpose, billing, security, usage, limitations, lifecycle, and confidentiality.
+- **Subcomponent Definitions**: Configure one or more MongoDB collections by providing their name, description, and an optional JSON Schema for validation.
+
+![Output Port Provisioning](docs/img/example_template.png)
 
 ### What's a Template?
 
@@ -40,7 +51,22 @@ Output ports are one of the main components for the Data Mesh data platform taxo
 
 ### MongoDB
 
-MongoDB is a document-oriented NoSQL database designed for high performance, scalability, and ease of development.
+MongoDB is a general-purpose, document-oriented NoSQL database designed for high performance, high availability, and easy scalability. It stores data in flexible, JSON-like documents, meaning fields can vary from document to document and data structure can be changed over time.
+
+MongoDB combines the power of traditional relational databases with the flexibility of modern NoSQL architectures. It is designed to handle large volumes of structured and unstructured data, making it ideal for a wide range of applications — from real-time analytics to content management and IoT.
+
+For example, MongoDB supports powerful indexing and querying capabilities, dynamic schemas, and horizontal scalability through sharding. Its architecture also enables high availability through replica sets and built-in fault tolerance.
+
+MongoDB provides the foundation for building modern, cloud-native applications that need to process and serve massive amounts of data in real time. It is widely used across industries for its developer-friendly model and operational simplicity.
+
+- MongoDB includes the following key capabilities:
+- Flexible, document-based data model
+- Powerful query language and secondary indexes
+- Horizontal scalability with sharding
+- High availability with replica sets
+- Integrated aggregation framework for analytics
+- Rich ecosystem of drivers and tools
+- Cloud-native experience with MongoDB Atlas
 
 Learn more on [MongoDB documentation](https://www.mongodb.com/docs/)
 

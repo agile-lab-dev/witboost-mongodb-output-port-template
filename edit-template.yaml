@@ -191,13 +191,9 @@ spec:
                 type: object
                 ui:ObjectFieldTemplate: TableRowTemplate
                 required:
-                  - description
                   - collection
+                  - description
                 properties:
-                  description:
-                    type: string
-                    title: Description
-                    description: A short description to help others understand what kind of data this collection contains.
                   collection:
                     type: string
                     title: Collection
@@ -207,6 +203,11 @@ spec:
                     validation:
                       errorMessage: The collection name must contain only alphanumeric characters, underscores, or dashes
                       regularExpression: ^[a-zA-Z0-9_-]+$
+                  description:
+                    type: string
+                    title: Description
+                    description: A short description to help others understand what kind of data this collection contains.
+                    ui:placeholder: Enter a valid description for the collection
                   jsonschema:
                     type: string
                     title: JSON Schema

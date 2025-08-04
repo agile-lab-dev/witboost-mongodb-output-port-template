@@ -205,13 +205,9 @@ spec:
                 type: object
                 ui:ObjectFieldTemplate: TableRowTemplate
                 required:
-                  - description
                   - collection
+                  - description
                 properties:
-                  description:
-                    type: string
-                    title: Description
-                    description: Description of the subcomponent
                   collection:
                     type: string
                     title: Collection
@@ -221,6 +217,11 @@ spec:
                     validation:
                       errorMessage: The collection name must contain only alphanumeric characters, underscores, or dashes
                       regularExpression: ^[a-zA-Z0-9_-]+$
+                  description:
+                    type: string
+                    title: Description
+                    description: Description of the subcomponent
+                    ui:placeholder: Enter a valid description for the collection
                   jsonschema:
                     type: string
                     title: JSON Schema Validator
