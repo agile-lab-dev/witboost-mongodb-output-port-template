@@ -63,6 +63,7 @@ spec:
       description: ${{ component.description | dump }}
       kind: outputport
       infrastructureTemplateId: ${{ values.infrastructureTemplateId }}
+      useCaseTemplateId: ${{ values.useCaseTemplateSubId }}
       dependsOn: []
       platform: MongoDB
       technology: MongoDB
