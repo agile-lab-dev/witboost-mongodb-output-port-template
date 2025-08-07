@@ -21,13 +21,6 @@
 | **Depends On**          | ${{ values.dependsOn }}                           |
 
 
-## Output Port Details
-
-| **Field Name**       | **Value**                       |
-|----------------------|---------------------------------|
-| **metastore**        | ${{ values.metastore }}         |
-
-
 ## Subcomponents details
 {% for item in values.components %}
 | **Field Name**       | **Value**                       |

@@ -17,9 +17,9 @@ This repository is part of our [Starter Kit](https://github.com/agile-lab-dev/wi
 
 ## Overview
 
-Use this template to define an Output Port exposing a MongoDB-hosted database, with integrated access control for both the database and its collections.
+Use this template to automatically configure a MongoDB database instance through a Witboost Output Port. The configuration is executed by the **MongoDB Tech Adapter**. It allows the creation of databases (if not already existing), collections, and user roles directly on the MongoDB instance. Additionaly, it can be used to import existing collections to the Witboost lifecycle.
 
-![Output Port Provisioning](docs/img/hld-Output-Port-Provisioning.png)
+![MongoDB-TA-architecture](docs/img/mongodb-TA-architecture.png)
 
 The MongoDB Output Port Template guides you through the configuration of a secure and well-defined Output Port for exposing data from a MongoDB instance.
 
